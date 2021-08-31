@@ -29,30 +29,12 @@ def login(url,usernameId, username, passwordId, password, submit_buttonId):
    driver.find_element_by_name(submit_buttonId).click()
   
    
-login("http://10.39.234.54/centreon/", "useralias", "dt_supervision", "password", "DT2020$", "submitLogin")
+login("url", "usernameId", "username", " passwordId", "password", "submit_buttonId")
 #Service Data counter
-urls=["http://10.39.234.54/centreon/main.php?p=204&mode=0&svc_id=ocsstd.djiboutitelecom.dj;CAPS",
-      "http://10.39.234.54/centreon/main.php?p=204&mode=0&svc_id=ocsstd.djiboutitelecom.dj;sw_check_diameter_data_counters",
-      "http://10.39.234.54/centreon/main.php?p=204&mode=0&svc_id=ocsstd.djiboutitelecom.dj;sw_check_diameter_open_data_sessions",
-      "http://10.39.234.54/centreon/main.php?p=204&mode=0&svc_id=ocsstd.djiboutitelecom.dj;sw_check_diameter_activesess",
-      "http://10.39.234.54/centreon/main.php?p=204&mode=0&svc_id=ocsstd.djiboutitelecom.dj;sw_check_diameter_calls_active",
-      "http://10.39.234.54/centreon/main.php?p=204&mode=0&svc_id=ocsmngt.djiboutitelecom.dj;Memory_Usage",
-      "http://10.39.234.54/centreon/main.php?p=204&mode=0&svc_id=ocsstd.djiboutitelecom.dj;Memory_Usage",
-      "http://10.39.234.54/centreon/main.php?p=204&mode=0&svc_id=ocsstd.djiboutitelecom.dj;Interface_eth0",
-      "http://10.39.234.54/centreon/main.php?p=204&mode=0&svc_id=ocsstd.djiboutitelecom.dj;Interface_eth1",
-      "http://10.39.234.54/centreon/main.php?p=204&mode=0&svc_id=ocsstd.djiboutitelecom.dj;Interface_eth2"
+urls=[
      
       ]
-ids=[ "#graph_wrapper_100_312 > div.title > a:nth-child(4)",
-      "#graph_wrapper_100_327 > div.title > a:nth-child(4)",
-      "#graph_wrapper_100_329 > div.title > a:nth-child(4)",
-      "#graph_wrapper_100_324 > div.title > a:nth-child(4)",
-      "#graph_wrapper_100_325 > div.title > a:nth-child(4)",
-      "#graph_wrapper_99_227 > div.title > a:nth-child(4)",
-      "#graph_wrapper_100_279 > div.title > a:nth-child(4)",
-      "#graph_wrapper_100_265 > div.title > a:nth-child(4)",
-      "#graph_wrapper_100_266 > div.title > a:nth-child(4)",
-      "#graph_wrapper_100_267 > div.title > a:nth-child(4)"   
+ids=[
    ]
 x=0
 for i in urls:
@@ -61,7 +43,4 @@ for i in urls:
    clicked(i,mystring,ids[x])
    x=x+1
   
-
-  # Opens a image in RGB mode 
-
  
